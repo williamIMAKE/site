@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<style>
+#slider {float: center; margin: 0 auto;}
+		#slider a { position: absolute; top: 0; left: 0; opacity: 0;filter:alpha(opacity=0);}
+		.ativo {opacity: 1!important; filter:alpha(opacity=100)!important;}
+		
+		/*controladores*/
+		span {background: #ff9b00; cursor: pointer; opacity: 0;filter:alpha(opacity=0); position: absolute; bottom: 40%; width: 43px; height: 43px; z-index: 5; border-radius:50%;}
+		.next {right: 10px;}
+		.next:before,.next:after {left: 21px;}
+		.next:before {
+			-webkit-transform: rotate(-42deg);
+			top: 5px;
+		}
+		.next:after {
+			-webkit-transform: rotate(-132deg);
+			top: 19px;
+		}
+		.next:before,.next:after,.prev:before,.prev:after {content: "";
+			height: 20px;
+			background: #fff;
+			width: 1px;
+			position: absolute;
+		}
+
+		.prev {left: 10px;}
+		.prev:before,.prev:after {left: 18px;}
+		.prev:before {
+			-webkit-transform: rotate(42deg);
+			top: 5px;
+		}
+		.prev:after {
+			-webkit-transform: rotate(132deg);
+			top: 19px;
+		}
+
+
+		figure:hover span {opacity: 0.76;filter:alpha(opacity=76);}
+
+		figure {
+			max-width: 937px;
+			height: 509px;
+			position: relative;
+			overflow: hidden;
+			margin: 50px auto;
+			border-bottom-radius:13%;
+			border-top-radius:13%;
+		}
+
+		figcaption {padding-left: 20px;color: #fff; font-family: "Kaushan Script","Lato","arial"; font-size: 22px; background: #ff9b00; width: 100%; position: absolute; bottom: 0; left: 0; line-height: 55px; height: 55px; z-index: 5}
+	</style>
+
+
+    <link class="include" href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link class="include" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/index-stylesheet.css">
+</head>
+
+<body class="" id="page-top">
+<div style="background:#A65718; width:100%; float:right; text-align:right;">
+
+	<p style="text-align:right; font-size: 1.0em; color: #000; float: right;">AGENTE AUTORIZADO<br />
+<img src="monroe.png" alt="agente autorizado Monroe"     style="width: 25%; float: right;"> <br /></p>
+
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="width:100%;">
+        <div class="container">
+            <div class="navbar-header">
+		<ul>
+			<li>
+			<a href="https://www.facebook.com/casadasuspensaosertorio/" target="_blank" style=" float:left border-radius: 50%;"> <img src="logofacebook.png" alt="Curta nossa página" > </a>
+		
+			
+
+			<img src="logo.png" alt="Casa da Suspensão" style="text-align: center; width:164px; height:75px; margin: 0 auto;">
+		
+		<br />
+			<a style="text-align:center; background:#ff9b00;" href="dicas/casadasuspensao.html" >Dicas</a>
+			
+		
+			
+			
+					  <a style="text-align:center; background:#ff9b00;" href="promocoes/casadasuspensao.html" >Promoções</a>
+			<a style="text-align:center; background:#ff9b00;" href="#contato" >Contato</a>
+			
+			<a style="text-align:center; background:#ff9b00;" href="#sobre" >Sobre</a>
+			</li>
+			</ul>
+			
+			
+			
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+    
+  </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+	
+	
+
+
+
+
+
+	
+	
+        <div class="intro-body">
+		 
+		
+            <div class="container">
+		
+								  	<figure style="margin-top: 1%;
+    margin-left: 10%; ">
+		<span class="trs next"></span>
+		<span class="trs prev"></span>
+
+		<div id="slider">
+			<a href="#" class="trs"><img src="images/1.jpg" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>
+			<a href="#" class="trs"><img src="images/2.jpg" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/3.jpg" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/4.jpg" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/5.JPG" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/6.JPG" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/7.JPG" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/8.JPG" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/9.JPG" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/10.JPG" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/11.JPG" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/12.JPG" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/13.jpg" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			<a href="#" class="trs"><img src="images/14.jpg" alt="Av. Sertório, 7255 - Sarandi, Porto Alegre - RS, 91130-721 Telefone: (51) 3371-4568" style="width:100%; height:100%;" /></a>	
+			
+			</div>
+
+		<figcaption></figcaption>
+	</figure>
+	<script type="text/javascript">
+		function setaImagem(){
+			var settings = {
+				primeiraImg: function(){
+					elemento = document.querySelector("#slider a:first-child");
+					elemento.classList.add("ativo");
+					this.legenda(elemento);
+				},
+
+				slide: function(){
+					elemento = document.querySelector(".ativo");
+
+					if(elemento.nextElementSibling){
+						elemento.nextElementSibling.classList.add("ativo");
+						settings.legenda(elemento.nextElementSibling);
+						elemento.classList.remove("ativo");
+					}else{
+						elemento.classList.remove("ativo");
+						settings.primeiraImg();
+					}
+
+				},
+
+				proximo: function(){
+					clearInterval(intervalo);
+					elemento = document.querySelector(".ativo");
+					
+					if(elemento.nextElementSibling){
+						elemento.nextElementSibling.classList.add("ativo");
+						settings.legenda(elemento.nextElementSibling);
+						elemento.classList.remove("ativo");
+					}else{
+						elemento.classList.remove("ativo");
+						settings.primeiraImg();
+					}
+					intervalo = setInterval(settings.slide,4000);
+				},
+
+				anterior: function(){
+					clearInterval(intervalo);
+					elemento = document.querySelector(".ativo");
+					
+					if(elemento.previousElementSibling){
+						elemento.previousElementSibling.classList.add("ativo");
+						settings.legenda(elemento.previousElementSibling);
+						elemento.classList.remove("ativo");
+					}else{
+						elemento.classList.remove("ativo");						
+						elemento = document.querySelector("a:last-child");
+						elemento.classList.add("ativo");
+						this.legenda(elemento);
+					}
+					intervalo = setInterval(settings.slide,4000);
+				},
+
+				legenda: function(obj){
+					var legenda = obj.querySelector("img").getAttribute("alt");
+					document.querySelector("figcaption").innerHTML = legenda;
+				}
+
+			}
+
+
+			//chama o slide
+			settings.primeiraImg();
+
+			//chama a legenda
+			settings.legenda(elemento);
+
+			//chama o slide à um determinado tempo
+			var intervalo = setInterval(settings.slide,4000);
+			document.querySelector(".next").addEventListener("click",settings.proximo,false);
+			document.querySelector(".prev").addEventListener("click",settings.anterior,false);
+
+		}
+
+		window.addEventListener("load",setaImagem,false);
+	</script>
+		
+				
+			<br /> 		
+		<a href="#about" class="btn btn-circle page-scroll" id="">
+                            <i class="fa fa-angle-double-down animated">↓</i>
+							
+                        </a>
+			
+			
+			<br />	
+               <div class="row">
+
+  
+                </div>  
+            </div>
+        </div>
+    </header>
+<hr>
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+	
+	
+
+        <h2>Nossos produtos &amp; Serviços<br></h2>
+		<hr style="color:#e99002; width:50%;"> 
+        <div class="row image-grid" style="padding:5%;  font-size: 1.0em;">
+            <div class="col-xs-3" ><h4 style="padding:5%; font-size: 1.0em;">BALANCEAMENTO</h4><hr style="color:#e99002; width:50%; "> 
+                <a href="#" class="thumbnail">
+                    <img src="imgps/balanceamento.png" id=""  >
+                </a><a href="#" class="thumbnail" style="color: #000;">Tem como objetivo compensar as massas do conjunto pneu/rodas, que por 
+ventura estejam em desiquilíbrio. O primeiro sinal de que a roda esta 
+desbalanceada é uma vibração sentida no volante.</a>
+            </div>
+            <div class="col-xs-3" ><h4 style="padding:5%;  font-size: 1.0em;">Amortecedor</h4><hr style="color:#e99002; width:50%;"> 
+                <a href="#" class="thumbnail">
+                    <img src="imgps/amortecedor.jpg">
+                </a><a href="#" class="thumbnail" style="color: #000;">O amortecedor é o principal elemento da Suspensão. 
+É a ligação entre as rodas e o chassi, sua função é manter os pneus do veículo em contato com a 
+estrada, garantindo segurança e conforto para todos os passageiros.</a>
+            </div>
+            <div class="col-xs-3" ><h4 style="padding:5%;  font-size: 1.0em;">Cambagem</h4><hr style="color:#e99002; width:50%;"> 
+                <a href="#" class="thumbnail">
+                    <img src="imgps/cambagem.jpg">
+                </a><a href="#" class="thumbnail" style="color: #000;">Um ângulo de cambagem muito acentuado, negativo ou positivo causa o desgaste dos pneus em pouco tempo. 
+Quando a cambagem está muito negativa, o pneu desgasta por dentro, quando está muito positiva, desgasta por fora. 
+As alterações da cambagem são causadas por pancadas fortes, buracos, e por excesso de peso.</a>
+            </div>
+            <div class="col-xs-3" ><h4 style="padding:5%;">Cáster</h4><hr style="color:#e99002; width:50%;"> 
+                <a href="#" class="thumbnail">
+                    <img src="imgps/caster.jpg">
+                </a><a href="#" class="thumbnail" style="color: #000;">É o alinhamento das rodas em relação aos eixos da suspensão (roda adiantada ou recuada)</a>
+            </div>
+        </div>
+        <div class="row image-grid" id="">
+            <div class="col-xs-3" ><h4 style="padding:5%;  font-size: 1.0em;">Freios</h4><hr style="color:#e99002; width:50%;"> 
+                <a href="#" class="thumbnail">
+                    <img src="imgps/freio.jpg">
+                </a><a href="#" class="thumbnail" style="color: #000;">O sistema de freios é um dos itens mais importantes de um veículo, pois a segurança dos ocupantes 
+depende do seu bom funcionamento. Muitos acidentes podem ser evitados com a revisão periódica dos discos, pastilhas, 
+tambor e fluido de freio, essenciais para a manutenção  e rendimento do carro.</a>
+            </div>
+            <div class="col-xs-3" ><h4 style="padding:5%;  font-size: 1.0em;">Geometria 3D</h4><hr style="color:#e99002; width:50%;"> 
+                <a href="#" class="thumbnail">
+                    <img src="imgps/Geometria3D.jpg">
+                </a><a href="#" class="thumbnail" style="color: #000;">A geometria permite que os pneus fiquem em perfeito contato com o solo. Alinhar a direção significa ajustar 
+três pontos da geometria da suspensão, que engloba todo o conjunto de molas, amortecedores, braços, buchas e 
+componentes do sistema de direção. Para isso contamos com uma geometria 3D de última geração.</a>
+            </div>
+            <div class="col-xs-3"><h4 style="padding:5%;  font-size: 1.0em;">Troca de Óleo</h4><hr style=" color: #e99002; width:50%;"> 
+                <a href="#" class="thumbnail">
+                    <img src="imgps/oleo.jpg">
+                </a><a href="#" class="thumbnail" style="color: #000;">trocar o óleo do carro não é um gasto, mas sim uma necessidade. 
+A lubrificação e viscosidade correta do óleo é fundamental para a saúde e durabilidade 
+do motor e faz parte dos procedimentos de rotina na manutenção do veículo. A indicação é substituir o óleo
+a cada 5.000km ou 6 meses de uso.</a>
+            </div>
+            <div class="col-xs-3" ><h4 style="padding:5%; font-size: 1.0em;">Revisão</h4><hr style="color:#e99002; width:50%;"> 
+                <a href="#" class="thumbnail">
+                    <img src="imgps/revisao.jpg">
+                </a><a href="#" class="thumbnail" style="color: #000;">O seu carro precisa de revisão periódica, para isso contamos com equipamentos modernos
+para testar e avaliar o seu carro, para substituir apenas os itens necessarios.</a>
+            </div>
+        </div><hr style="color:#e99002; width:50%;"> 
+        <div class="row">
+            <div class="col-lg-12">
+			
+			
+			
+			   
+			   <div class="cd-gallery-container">
+		<nav class="cd-filter">
+			<ul>
+				<li class="placeholder"> 
+					<a data-type="Balanceamento" href="#0">Balanceamento</a> <!-- selected option on mobile -->
+				</li> 
+				<li>
+					<a data-type="Balanceamento" href="#0">Balanceamento</a> 
+				</li>
+				<li>
+					<a  data-type="Geometria3D" href="#0">Geometria 3D</a>
+				</li>
+
+				<li>
+					<a data-type="caster" href="#0">Cáster</a>
+				</li>
+								<li>
+					<a data-type="Cambagemoucamber" href="#0">Cambagem ou camber</a>
+				</li>
+
+				<li>
+					<a data-type="revisaopreventiva" href="#0">Revisão preventiva</a>
+				</li>
+			</ul>
+			
+			<ul>
+
+				<li>
+					<a class="selected" data-type="Freio" href="#0">Freio</a>
+				</li>
+
+				<li>
+					<a data-type="Amortecedores" href="#0">Amortecedores</a>
+				</li>
+
+				<li>
+					<a data-type="trocadeoleo" href="#0">Troca de óleo</a>
+				</li>
+			</ul>
+			
+			
+			
+		</nav>
+<hr>
+		<ul class="cd-gallery cd-container">
+			<li>
+				<ul class="cd-item-wrapper">
+					<li data-type="Balanceamento" class="is-visible">
+						<img src="imgps/balanceamento.png" alt="Tem como objetivo compensar as massas do conjunto pneu/rodas, que por 
+ventura estejam em desiquilíbrio. O primeiro sinal de que a roda esta 
+desbalanceada é uma vibração sentida no volante."><p style="color: #000;">Tem como objetivo compensar as massas do conjunto pneu/rodas, que por 
+ventura estejam em desiquilíbrio. O primeiro sinal de que a roda esta 
+desbalanceada é uma vibração sentida no volante.</p>
+					</li>
+					<li data-type="Geometria3D" class="is-hidden">
+						<img src="imgps/Geometria3D.jpg" alt=" A geometria permite que os pneus fiquem em perfeito contato com o solo. Alinhar a direção significa ajustar 
+três pontos da geometria da suspensão, que engloba todo o conjunto de molas, amortecedores, braços, buchas e 
+componentes do sistema de direção. Para isso contamos com uma geometria 3D de última geração."><p style="color: #000;">A geometria permite que os pneus fiquem em perfeito contato com o solo. Alinhar a direção significa ajustar 
+três pontos da geometria da suspensão, que engloba todo o conjunto de molas, amortecedores, braços, buchas e 
+componentes do sistema de direção. Para isso contamos com uma geometria 3D de última geração.</p>
+					</li>
+
+					<li data-type="caster" class="is-hidden">
+						<img src="imgps/caster.jpg" alt="É o alinhamento das rodas em relação aos eixos da suspensão (roda adiantada ou recuada)."><p style="color: #000;">É o alinhamento das rodas em relação aos eixos da suspensão (roda adiantada ou recuada).</p>
+					</li>
+
+					<li data-type="Cambagemoucamber" class="is-hidden">
+						<img src="imgps/cambagem.jpg" alt="Um ângulo de cambagem muito acentuado, negativo ou positivo causa o desgaste dos pneus em pouco tempo. 
+Quando a cambagem está muito negativa, o pneu desgasta por dentro, quando está muito positiva, desgasta por fora. 
+As alterações da cambagem são causadas por pancadas fortes, buracos, e por excesso de peso."><p style="color: #000;">Um ângulo de cambagem muito acentuado, negativo ou positivo causa o desgaste dos pneus em pouco tempo. 
+Quando a cambagem está muito negativa, o pneu desgasta por dentro, quando está muito positiva, desgasta por fora. 
+As alterações da cambagem são causadas por pancadas fortes, buracos, e por excesso de peso.</p>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<ul class="cd-item-wrapper">
+					<li data-type="revisaopreventiva" class="is-hidden">
+						<img src="imgps/revisao.jpg" alt="O seu carro precisa de revisão periódica, para isso contamos com equipamentos modernos
+para testar e avaliar o seu carro, para substituir apenas os itens necessarios."><p style="color: #000;">O seu carro precisa de revisão periódica, para isso contamos com equipamentos modernos
+para testar e avaliar o seu carro, para substituir apenas os itens necessarios.</p>
+					</li>
+
+					
+					<li data-type="Freio" class="is-hidden">
+						<img src="imgps/freio.jpg" alt="O sistema de freios é um dos itens mais importantes de um veículo, pois a segurança dos ocupantes 
+depende do seu bom funcionamento. Muitos acidentes podem ser evitados com a revisão periódica dos discos, pastilhas, 
+tambor e fluido de freio, essenciais para a manutenção  e rendimento do carro."><p style="color: #000;">O sistema de freios é um dos itens mais importantes de um veículo, pois a segurança dos ocupantes 
+depende do seu bom funcionamento. Muitos acidentes podem ser evitados com a revisão periódica dos discos, pastilhas, 
+tambor e fluido de freio, essenciais para a manutenção  e rendimento do carro.</p>
+					</li>
+					
+					
+					<li data-type="Amortecedores" class="is-hidden">
+						<img src="imgps/amortecedor.jpg" alt="O amortecedor é o principal elemento da Suspensão. 
+É a ligação entre as rodas e o chassi, sua função é manter os pneus do veículo em contato com a 
+estrada, garantindo segurança e conforto para todos os passageiros."><p style="color: #000;">O amortecedor é o principal elemento da Suspensão. 
+É a ligação entre as rodas e o chassi, sua função é manter os pneus do veículo em contato com a 
+estrada, garantindo segurança e conforto para todos os passageiros.</p>
+					</li>
+					
+					<li data-type="trocadeoleo" class="is-hidden">
+						<img src="imgps/oleo.jpg" alt="trocar o óleo do carro não é um gasto, mas sim uma necessidade. 
+A lubrificação e viscosidade correta do óleo é fundamental para a saúde e durabilidade 
+do motor e faz parte dos procedimentos de rotina na manutenção do veículo. A indicação é substituir o óleo
+a cada 5.000km ou 6 meses de uso."><p style="color: #000;">trocar o óleo do carro não é um gasto, mas sim uma necessidade. 
+A lubrificação e viscosidade correta do óleo é fundamental para a saúde e durabilidade 
+do motor e faz parte dos procedimentos de rotina na manutenção do veículo. A indicação é substituir o óleo
+a cada 5.000km ou 6 meses de uso.</p>
+					</li>
+				</ul>
+			</li>
+
+		</ul> <!-- cd-gallery -->
+	</div> <!-- cd-gallery-container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Gem jQuery -->
+			   
+			   
+			
+			
+			
+			
+			
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section 
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Contact Section -->
+    <section id="contact"  class="container content-section text-center">
+        <div class="row"> <h2> Venha conhecer a nossa empresa!</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.294422541897!2d-51.13634998488588!3d-29.99970128189868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951976fce9a9f063%3A0xf3feb267409cf1c9!2sCasa+da+Suspens%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1480833612757" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
+            <div class="col-lg-12" >
+               
+			   <h1><a name="contato">Entre em Contato conosco!</a></h1>
+			          
+				<form action="sendemail.php" method="POST" ><br />
+                	<div >
+					<input class="input-text" type="text" name="nome" value="Seu Nome *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" style="background: #FFF; width: 50%; height: 5.0em; border: 1x #000; border-radius: 1%;">
+					</div>
+					
+					<br />
+					
+                   <div>
+				   <input class="input-text" type="text" name="email" value="Seu E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" style="background: #FFF; width: 50%; height: 5.0em; border: 1x #000; border-radius: 1%;">
+				   </div>
+				   <br />
+                	
+					<div>
+					
+					<input class="input-text" type="text" name="phone" value="Seu telefone*" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" style="background: #FFF; width: 50%; height: 5.0em; border: 1x #000; border-radius: 1%;">
+					</div>
+					<br />
+                	
+					<div>
+					
+					<textarea class="input-text text-area" cols="0" name="message" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" style="background: #FFF; width: 50%; height: 5.0em; border: 1x #000; border-radius: 1%;">Sua Mensagem *</textarea>
+					</div>
+					<br />
+					
+                    <input class="input-btn" type="submit" value="Enviar Mensagem" style="color:#FFF ; background: #e99002; width: 50%; height: 5.0em; border: 1x #000; border-radius: 1%;"><br />
+                </form>
+			
+			   
+			   <br />
+			   <hr>
+			   <p><h3><a name="sobre">"Somos uma empresa especializada em suspensão automotiva, com profissionais qualificados e preços diferenciados."</a></h3></p><hr><br />
+			   <hr>
+			   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcasadasuspensaosertorio%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=144759562568825" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			   <hr>
+			   
+            </div>
+        </div>
+    </section> 
+
+    <!-- Map Section
+    <div id="map"></div> -->
+
+    <!-- Footer -->
+    <footer>
+	<hr>
+        <div class="container text-center">
+            <p>Copyright © Casa da Suspensão 2016 | Orgulhosamente desenvolvido por <a href="http://www.imake-rs.net/"alt="iMake Soluções em Tecnologia">iMake</a> & SH Marketing digital.</p>
+        </div>
+    </footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/jquery-easing.js"></script>
+<script id="main-script" src="js/index-scripts.js"></script>
+</body>
+
+</html>
